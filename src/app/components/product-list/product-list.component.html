@@ -7,9 +7,8 @@
             <a routerLink="/products/{{product.id}}">
               <img src="{{product.imageUrl}}" class="img-responsive" alt="">
             </a>
-            <a routerLink="/products/{{product.id}}" class="h3">
-              <i class="fa fa-computer"></i>
-              <h1>{{product.name}}</h1>
+            <a routerLink="/products/{{product.id}}" class="text-black link-underline link-underline-opacity-0">
+              <h4>{{product.name}}</h4>
             </a>
             <div class="price">{{product.unitPrice | currency: "USD"}}</div>
             <button href="#" (click)="addToCart(product)" class="btn btn-primary btn-sm">Add to cart</button>
